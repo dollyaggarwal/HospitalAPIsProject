@@ -1,4 +1,11 @@
 # Hospital API🏥
+## Postman API Documentation
+
+https://documenter.getpostman.com/view/31300898/2s9YypGPqu
+
+## Live Server link
+
+https://hospitalapis-61zi.onrender.com/
 
 ## Project Setup
 
