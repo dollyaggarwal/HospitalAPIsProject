@@ -16,6 +16,9 @@ mongoose.connect(config.mongoURI,
     }
         );
 
+app.get('/', ()=>{
+  return res.send("Welcome to my Hospital Server");
+})
 // Use routes
 app.use('/doctors', doctorRoutes);
 app.use('/patients', patientRoutes);
