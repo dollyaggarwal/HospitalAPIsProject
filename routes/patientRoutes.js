@@ -5,7 +5,7 @@ const auth = require('../utils/auth');
 const router = express.Router();
 
 router.post('/register', patientController.register);
-router.post('/:id/create_report',auth, patientController.createReport);
-router.get('/:id/all_reports',auth, patientController.getAllReports);
+router.post('/create_report/:id',auth, patientController.createReport);
+router.get('/all_reports/:id',auth, patientController.getAllReports);
 
 module.exports = router;

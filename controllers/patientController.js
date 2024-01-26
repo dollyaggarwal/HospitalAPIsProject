@@ -11,7 +11,7 @@ exports.register = async (req, res) => {
 
     // If the patient exists, return their information
     if (patient) {
-      return res.status(200).json({ patient });
+      return res.status(200).json({message: 'Patient Already registered', patient });
     }
 
     // Create a new patient
@@ -38,8 +38,11 @@ exports.createReport = async (req, res) => {
     }
 
     // Create a new report
-    const newReport = new Report({ createdBy, status });
+    const newReport = new Report({patientId:id, createdBy, status });
     await newReport.save();
+
+     // Initialize the reports array if not already present
+     patient.reports = patient.reports || [];
 
     // Add the report to the patient's records
     patient.reports.push(newReport);
