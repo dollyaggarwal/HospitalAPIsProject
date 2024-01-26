@@ -1,4 +1,4 @@
-# Hospital API
+# Hospital API🏥
 
 ## Project Setup
 
