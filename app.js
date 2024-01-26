@@ -10,8 +10,9 @@ const app = express();
 app.use(express.json());
 
 mongoose.connect(config.mongoURI,
-     { useNewUrlParser: true, 
-        useUnifiedTopology: true 
+     { dbName: 'HospitalAPIs',
+      //  useNewUrlParser: true, 
+      //   useUnifiedTopology: true 
     }
         );
 

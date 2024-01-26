@@ -6,7 +6,7 @@
 2. Install dependencies using `npm install`.
 3. Set up your MongoDB database and update `config.js` with the appropriate URI.
 4. Run the application using `npm start`.
-5. API will be available at `http://localhost:3000`.
+5. API will be available at `http://localhost:3200`.
 
 ## API Endpoints
 
